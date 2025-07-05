@@ -1,8 +1,8 @@
 ﻿namespace e_commerce_task.Models
 {
-    class SimpleProduct : Product
+    class BasicProduct : Product
     {
-        public SimpleProduct(string name, double price, int quantity)
+        public BasicProduct(string name, double price, int quantity)
             : base(name, price, quantity)
         {
         }
