@@ -68,6 +68,7 @@ It allows customers to add products to a cart, handle shipping for applicable it
 
 
 ## Example 
+
 var cheese = new ShippableProduct("Cheese", 100, 5, 0.2);
 var biscuits = new ShippableProduct("Biscuits", 150, 2, 0.35);
 var scratchCard = new SimpleProduct("Scratch Card", 50, 10);
@@ -81,6 +82,7 @@ cart.Add(scratchCard, 1);
 CheckoutService.Checkout(customer, cart);
 
 ## Samaple output
+
 ** Shipment notice **
 2x Cheese 400g
 2x Biscuits 700g
