@@ -63,25 +63,41 @@ It allows customers to add products to a cart, handle shipping for applicable it
 
 6. **Expiration Logic**
    - Products are expired if `current date > ExpiryDate`.
-7. Samaple output
-  ** Shipment notice **
+  
+
+
+
+## Example 
+var cheese = new ShippableProduct("Cheese", 100, 5, 0.2);
+var biscuits = new ShippableProduct("Biscuits", 150, 2, 0.35);
+var scratchCard = new SimpleProduct("Scratch Card", 50, 10);
+var customer = new Customer("Randa", 1000);
+
+var cart = new Cart();
+cart.Add(cheese, 2);
+cart.Add(biscuits, 2);
+cart.Add(scratchCard, 1);
+
+CheckoutService.Checkout(customer, cart);
+
+## Samaple output
+** Shipment notice **
 2x Cheese 400g
-1x Biscuits 700g
+2x Biscuits 700g
 Total package weight 1.1kg
 
 ** Checkout receipt **
 2x Cheese 200
-1x Biscuits 150
+2x Biscuits 300
 1x Scratch Card 50
 ----------------------
-Subtotal 400
+Subtotal 550
 Shipping 33
-Amount 433
-Customer balance: 567
+Amount 583
+Customer balance: 417
 
-## 🚀 How to Run
+## How to Run
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/ecommerce-task.git
-   cd ecommerce-task
+Clone the repo
+Open the project in visual studio
+run this
